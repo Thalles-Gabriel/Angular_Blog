@@ -4,7 +4,7 @@ Primeiro projeto feito com Angular, explorando a framework e expandindo o conhec
 
 ## Principais feitios
 
-Expansão nos métodos de criação de componentes com diretivas do Angular, iterando arrays com ngFor e construindo componentes condicionalmentes com ngIf, utilização de ng-content para encapsulamento virtual de elementos sem alteração no DOM e classes condicionais com ngClass permitindo mais personalização do design dos componentes com `:host`
+Expansão nos métodos de criação de componentes com diretivas do Angular, iterando arrays com `ngFor` e construindo componentes condicionalmentes com `ngIf`, utilização de `ng-content` para encapsulamento virtual de elementos sem alteração no DOM e classes condicionais com `ngClass` permitindo mais personalização do design dos componentes com `:host`
 
 ## Tecnologias usadas
 
