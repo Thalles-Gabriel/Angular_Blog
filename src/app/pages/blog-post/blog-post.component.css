@@ -1,0 +1,122 @@
+:host {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  height: 100dvh;
+  width: 100dvw;
+  background: #484848;
+}
+
+div {
+  text-align: center;
+}
+
+.content {
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  position: relative;
+}
+
+header {
+  margin-top: 2rem;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+}
+
+h4 {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+p {
+  letter-spacing: 0.03em;
+  text-align: left;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.4rem;
+  text-indent: 4rem;
+}
+
+aside {
+  background: #f3f4f8;
+  padding-left: 1em;
+  max-width: 20vw;
+}
+
+aside, nav {
+  display: flex;
+}
+
+nav {
+  justify-content: space-evenly;
+  flex-flow: column;
+  align-items: center;
+  max-width: 18vw;
+}
+
+img {
+  margin-right: 1rem;
+}
+
+nav nav {
+  overflow: auto;
+  height: 80vh;
+  justify-content: unset;
+}
+
+app-card-posts {
+  flex-flow: column;
+}
+
+@media (width < 1200px) {
+  :host {
+    flex-flow: column;
+  }
+
+  app-card-posts {
+    flex-flow: row nowrap;
+  }
+
+  aside {
+    max-width: unset;
+    margin-top: auto;
+    padding-right: 1em;
+    height: 20vh;
+  }
+
+  nav {
+    flex-flow: row-reverse;
+    height: 100%;
+    max-width: unset;
+  }
+
+  nav nav {
+    height: 100%;
+    align-items: center;
+    max-width: unset;
+    flex-flow: row nowrap;
+    margin: 0.5em;
+  }
+
+  nav div {
+    min-width: fit-content;
+  }
+
+  .content {
+    overflow: unset;
+  }
+}

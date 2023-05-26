@@ -1,0 +1,38 @@
+<div class="content">
+  <header>
+    <h1>My Dev Blog</h1>
+  </header>
+
+  <main>
+    <article>
+      <h4>{{fakeContent.createdAt}}</h4>
+      <img [src]="fakeContent.imageUrl" alt="Post número sla oq">
+      <h2>{{fakeContent.title}}</h2>
+      <p>{{fakeContent.content}}</p>
+    </article>
+  </main>
+</div>
+
+<aside>
+  <nav>
+    <a [routerLink]="'/'">
+      Página Principal
+      <fa-icon [icon]="faArrowRight"></fa-icon>
+    </a>
+    <nav>
+      <ng-container class="next-posts" *ngFor="let post of fakeData|slice:0:10; index as i">
+        <div *ngIf="i !== id - 1">
+            <app-card-posts [postContent]="post" [index]="i"></app-card-posts>
+        </div>
+      </ng-container>
+    </nav>
+    <div>
+      <h3>
+        <a href="https://www.linkedin.com/in/thalles-gpoliveira/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+      </h3>
+      <a href="https://github.com/Thalles-Gabriel" target="_blank" rel="noopener noreferrer">
+        <h3>GitHub</h3>
+      </a>
+    </div>
+  </nav>
+</aside>

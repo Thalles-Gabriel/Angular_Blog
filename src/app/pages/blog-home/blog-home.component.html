@@ -1,0 +1,23 @@
+  <header>
+    <a href="https://github.com/Thalles-Gabriel" target="_blank" rel="noopener noreferrer">
+      <h2>GitHub.com/Thalles-Gabriel</h2>
+    </a>
+    <h1>My Dev Blog</h1>
+    <h3>Primeiro projeto feito em Angular para a trilha de Angular Developer da DIO</h3>
+  </header>
+  <main>
+    <h3>Posts recentes</h3>
+    <nav>
+      <ng-container *ngFor="let post of fakeContent | slice:0:4; index as i; first as isFirst">
+        <app-card-posts [ngClass]="{'big': isFirst, 'card':true}" [postContent]="fakeContent[i]" [index]="i"></app-card-posts>
+      </ng-container>
+    </nav>
+  </main>
+  <footer>
+    <h3><a href="https://www.linkedin.com/in/thalles-gpoliveira/" target="_blank" rel="noopener noreferrer">Linkedin</a></h3>
+    <h3>
+      <a href="https://www.freepik.com/free-vector/black-white-background-with-geometric-shapes_18483451.htm#page=3&query=coding%20vector%20minimalist&position=38&from_view=search&track=ais"
+        target="_blank" rel="noopener noreferrer">
+        Image by Hello-Pixel</a> on Freepik
+    </h3>
+  </footer>

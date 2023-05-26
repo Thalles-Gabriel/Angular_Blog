@@ -1,0 +1,11 @@
+<img [src]="postContent.imageUrl" alt="Imagem {{index}}">
+<div>
+  <span>
+    <h5>{{postContent.createdAt}}</h5>
+    <a [routerLink]="['/post/', index + 1]">
+      <fa-icon [icon]="faArrow"></fa-icon>
+    </a>
+  </span>
+  <h4>{{postContent.title}}</h4>
+  <p>{{postContent.content}}</p>
+</div>
